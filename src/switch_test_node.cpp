@@ -17,7 +17,7 @@ int main(int argc, char **argv)	//int main(void)だとROSの関数が使えな�
 		{
 			ROS_INFO("OFF");     //C言語でいうprintf「ROS_INFO("~");　""内の文字を出力」
 		}
-	//	time_sleep(0.1);		//delay関数「time_sleep("秒");」
+		time_sleep(0.01);		//delay関数「time_sleep("秒");」
 	}
 	pigpio_stop(pi);	//PIGPIOデーモンとの接続を終了しライブラリが使用するリソースを解放(PIGPIOを使うときは必ず宣言)
 	return 0;	
